@@ -3,6 +3,8 @@ import { Container } from "./components/StyledComponents/Styles";
 import Header from "./components/Header";
 import { ThemeProvider } from "styled-components";
 
+import GlobalStyles from "./components/StyledComponents/GlobalStyles";
+
 const theme = {
   primaryColor: "black",
   colors: {
@@ -16,6 +18,7 @@ function App() {
   return (
     <React.Fragment>
       <ThemeProvider theme={theme}>
+        < GlobalStyles />
         <Header />
         <Container>
           <h1> Test</h1>
