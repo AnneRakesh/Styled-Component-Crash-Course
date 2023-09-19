@@ -1,8 +1,15 @@
+import React from "react";
+import { Container } from "./components/StyledComponents/Styles";
+import Header from "./components/Header";
+
 function App() {
   return (
-    <div className="App">
-      <h1> Test</h1>
-    </div>
+    <React.Fragment>
+      <Header />
+      <Container>
+        <h1> Test</h1>
+      </Container>
+    </React.Fragment>
   );
 }
 
